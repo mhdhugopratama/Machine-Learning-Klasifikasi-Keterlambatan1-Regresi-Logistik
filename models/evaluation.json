@@ -1,0 +1,45 @@
+{
+  "parameters": {
+    "beta_0": -1.2025,
+    "beta_1": -0.0001,
+    "beta_2": -0.0054,
+    "beta_3": 0.13,
+    "persamaan_logit": "z = -1.2025 + (-0.0001 * X1) + (-0.0054 * X2) + (0.1300 * X3)"
+  },
+  "layanan_encoding": {
+    "Ekspres": 0,
+    "Kargo": 1,
+    "Reguler": 2,
+    "Sameday": 3
+  },
+  "threshold": 0.5,
+  "evaluasi_seluruh_data": {
+    "n_samples": 500,
+    "accuracy": 0.746,
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1_score": 0.0,
+    "confusion_matrix": {
+      "TP": 0,
+      "FN": 127,
+      "FP": 0,
+      "TN": 373
+    },
+    "prob_max": 0.30667208912400173,
+    "prob_min": 0.202762869126887,
+    "prob_mean": 0.2538982057882066
+  },
+  "evaluasi_data_uji": {
+    "n_samples": 100,
+    "accuracy": 0.75,
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1_score": 0.0,
+    "confusion_matrix": {
+      "TP": 0,
+      "FN": 25,
+      "FP": 0,
+      "TN": 75
+    }
+  }
+}
