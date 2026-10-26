@@ -1,10 +1,10 @@
 {
   "parameters": {
-    "beta_0": -1.2025,
-    "beta_1": -0.0001,
-    "beta_2": -0.0054,
-    "beta_3": 0.13,
-    "persamaan_logit": "z = -1.2025 + (-0.0001 * X1) + (-0.0054 * X2) + (0.1300 * X3)"
+    "beta_0": -1.291713,
+    "beta_1": -6.2e-05,
+    "beta_2": -0.018288,
+    "beta_3": 0.181534,
+    "persamaan_logit": "z = -1.2917 + (-0.000062 * X1) + (-0.018288 * X2) + (0.181534 * X3)"
   },
   "layanan_encoding": {
     "Ekspres": 0,
@@ -12,22 +12,31 @@
     "Reguler": 2,
     "Sameday": 3
   },
+  "split_info": {
+    "metode": "train_test_split (Scikit-Learn)",
+    "train_size": 0.8,
+    "test_size": 0.2,
+    "random_state": 42,
+    "stratify": "Status_Keterlambatan",
+    "n_train": 400,
+    "n_test": 100
+  },
   "threshold": 0.5,
-  "evaluasi_seluruh_data": {
-    "n_samples": 500,
-    "accuracy": 0.746,
+  "evaluasi_data_latih": {
+    "n_samples": 400,
+    "accuracy": 0.745,
     "precision": 0.0,
     "recall": 0.0,
     "f1_score": 0.0,
     "confusion_matrix": {
       "TP": 0,
-      "FN": 127,
+      "FN": 102,
       "FP": 0,
-      "TN": 373
+      "TN": 298
     },
-    "prob_max": 0.30667208912400173,
-    "prob_min": 0.202762869126887,
-    "prob_mean": 0.2538982057882066
+    "prob_max": 0.32101547570562644,
+    "prob_min": 0.18927801581154105,
+    "prob_mean": 0.25499988515284705
   },
   "evaluasi_data_uji": {
     "n_samples": 100,
@@ -40,6 +49,25 @@
       "FN": 25,
       "FP": 0,
       "TN": 75
-    }
+    },
+    "prob_max": 0.32062938687956166,
+    "prob_min": 0.1912460572736559,
+    "prob_mean": 0.24904453181664293
+  },
+  "evaluasi_seluruh_data": {
+    "n_samples": 500,
+    "accuracy": 0.746,
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1_score": 0.0,
+    "confusion_matrix": {
+      "TP": 0,
+      "FN": 127,
+      "FP": 0,
+      "TN": 373
+    },
+    "prob_max": 0.32101547570562644,
+    "prob_min": 0.18927801581154105,
+    "prob_mean": 0.2538088144856062
   }
 }
